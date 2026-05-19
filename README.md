@@ -14,11 +14,25 @@ This repository contains a **production-ready Jupyter Notebook (Python)** that:
 > Note: Always respect the data provider Terms of Service. If any series fails to download (network restrictions), you can switch the notebook to **CSV mode**.
 
 ## How to run
-1. Create/activate a Python environment.
-2. Install dependencies:
-   - `pip install -r requirements.txt`
-3. Open and run the notebook:
-   - `notebooks/asset_pricing_models.ipynb`
+This repo is tested on **Windows + Python 3.13**.
+
+### 1) Create a virtual environment
+From the repository root:
+
+- Create venv: `python -m venv .venv`
+- Activate (PowerShell): `./.venv/Scripts/Activate.ps1`
+
+### 2) Install dependencies
+Inside the activated environment:
+
+- `python -m pip install -r requirements.txt`
+
+### 3) Run the model notebook
+Open and run:
+
+- `notebooks/asset_pricing_models.ipynb`
+
+The notebook downloads/caches data (if needed), runs CAPM/APT/performance metrics, and writes tables/figures.
 
 ## What you will edit
 At the top of the notebook, set:
@@ -32,7 +46,29 @@ The notebook writes clean artifacts to:
 - `data/processed/` (monthly prices/returns used in models)
 - `outputs/` (tables as CSV + key charts)
 
+This repository also **tracks** the cached inputs and generated outputs so the project is self-contained:
+- `data/raw/` contains the downloaded Yahoo Finance + FRED CSV caches
+- `outputs/` contains regression summaries, tables, and charts used in the report
+
 ## Exporting a PDF report
 Two common options:
-- Export the notebook to HTML and print-to-PDF from a browser.
-- Use `jupyter nbconvert --to pdf notebooks/asset_pricing_models.ipynb` (requires a LaTeX distribution).
+- Use the included technical report template: `report/technical_report.md`.
+   - Open it in VS Code Markdown preview (or GitHub) and **Print → Save as PDF**.
+- Or export the notebook to HTML and print-to-PDF from a browser.
+
+## Submission (Google Classroom)
+You must submit **two items**:
+1) A **PDF technical report** (exported from `report/technical_report.md` or from the notebook)
+2) The **functional repository** (either as a zipped folder or a GitHub link)
+
+Recommended submission checklist:
+- PDF: `report/technical_report.pdf` (generate from the Markdown report)
+- Repo: ZIP of the repo (exclude `.venv/`) or paste the GitHub repository link
+- Optional: attach `outputs/summary_tables.xlsx` if your lecturer wants an Excel workbook directly
+
+To submit:
+1. Open the assignment link in Google Classroom.
+2. Click the assignment → **View assignment**.
+3. Under **Your work**, click **Add or create**.
+4. Upload the PDF report, and either upload the ZIP repository or add the GitHub link.
+5. Click **Turn in / Submit**.

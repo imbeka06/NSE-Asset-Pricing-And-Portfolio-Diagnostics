@@ -1,0 +1,26 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   AAPL   R-squared:                       0.009
+Model:                            OLS   Adj. R-squared:                 -0.025
+Method:                 Least Squares   F-statistic:                    0.2731
+Date:                Tue, 19 May 2026   Prob (F-statistic):              0.762
+Time:                        18:54:57   Log-Likelihood:                 75.833
+No. Observations:                  60   AIC:                            -145.7
+Df Residuals:                      57   BIC:                            -139.4
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              0.0097      0.009      1.070      0.289      -0.008       0.028
+F1_Inflation_z    -0.0044      0.009     -0.476      0.636      -0.023       0.014
+F2_RateShock_z    -0.0046      0.009     -0.501      0.619      -0.023       0.014
+==============================================================================
+Omnibus:                        1.627   Durbin-Watson:                   1.932
+Prob(Omnibus):                  0.443   Jarque-Bera (JB):                1.182
+Skew:                           0.049   Prob(JB):                        0.554
+Kurtosis:                       2.319   Cond. No.                         1.14
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

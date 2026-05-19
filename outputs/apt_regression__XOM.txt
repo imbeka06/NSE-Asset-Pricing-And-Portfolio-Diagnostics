@@ -1,0 +1,26 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    XOM   R-squared:                       0.036
+Model:                            OLS   Adj. R-squared:                  0.002
+Method:                 Least Squares   F-statistic:                     1.053
+Date:                Tue, 19 May 2026   Prob (F-statistic):              0.356
+Time:                        18:54:57   Log-Likelihood:                 71.908
+No. Observations:                  60   AIC:                            -137.8
+Df Residuals:                      57   BIC:                            -131.5
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              0.0169      0.010      1.747      0.086      -0.002       0.036
+F1_Inflation_z     0.0117      0.010      1.189      0.239      -0.008       0.031
+F2_RateShock_z     0.0066      0.010      0.674      0.503      -0.013       0.026
+==============================================================================
+Omnibus:                        2.543   Durbin-Watson:                   2.358
+Prob(Omnibus):                  0.280   Jarque-Bera (JB):                1.987
+Skew:                           0.045   Prob(JB):                        0.370
+Kurtosis:                       3.887   Cond. No.                         1.14
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

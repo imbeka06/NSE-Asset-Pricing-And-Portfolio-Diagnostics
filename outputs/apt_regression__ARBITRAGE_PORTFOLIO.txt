@@ -1,0 +1,26 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             ARB_EXCESS   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.035
+Method:                 Least Squares   F-statistic:                     0.000
+Date:                Tue, 19 May 2026   Prob (F-statistic):               1.00
+Time:                        18:55:07   Log-Likelihood:                 113.31
+No. Observations:                  60   AIC:                            -220.6
+Df Residuals:                      57   BIC:                            -214.3
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              0.0052      0.005      1.080      0.285      -0.004       0.015
+F1_Inflation_z  4.337e-19      0.005    8.8e-17      1.000      -0.010       0.010
+F2_RateShock_z  4.337e-19      0.005    8.8e-17      1.000      -0.010       0.010
+==============================================================================
+Omnibus:                        0.598   Durbin-Watson:                   2.458
+Prob(Omnibus):                  0.742   Jarque-Bera (JB):                0.605
+Skew:                          -0.224   Prob(JB):                        0.739
+Kurtosis:                       2.799   Cond. No.                         1.14
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
